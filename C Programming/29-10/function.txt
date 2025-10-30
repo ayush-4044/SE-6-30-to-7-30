@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<math.h>
+
+//with para without return type
+void sum(int a,int b,int c)
+{
+   int d = a+b+c;
+   printf("%d",d);
+}
+
+
+int main()
+{
+    
+    sum(1,2,3);
+    
+    return 0;
+}
+
+=============================================
+
+#include<stdio.h>
+#include<math.h>
+
+//without para with return type
+int sum()
+{
+    int a = 2;
+    int b= 3;
+    int c = a+b;
+    
+    return c;
+}
+
+int main()
+{
+    printf("%d",sum());
+  
+    return 0;
+}
+
+=============================================
+
+#include<stdio.h>
+#include<math.h>
+
+//without para without return type
+void sum()
+{
+    int a = 5;
+    int b= 9;
+    int c = a+b;
+    printf("%d",c);  
+  
+}
+
+int main()
+{
+    sum();
+    return 0;
+}
+
+=============================================
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char ch[50];
+	clrscr();
+
+	printf("Enter String");
+	scanf("%s",&ch);
+
+       	printf("%s",strupr(ch));
+	 printf("%s",strlwr(ch));
+
+	 return 0;
+
+}
