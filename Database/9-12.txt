@@ -1,0 +1,16 @@
+1). CREATE DATABASE ayush
+2). CREATE TABLE info(id int PRIMARY KEY AUTO_INCREMENT,name varchar(20))
+3). ALTER TABLE info ADD surname varchar(20)
+4). ALTER TABLE info ADD email varchar(20) AFTER name
+5). ALTER TABLE info MODIFY email int
+6). ALTER TABLE info CHANGE email pincode int
+7). ALTER TABLE info DROP pincode
+8). RENAME TABLE info to information
+9). TRUNCATE TABLE information
+10). DROP TABLE information
+11). INSERT INTO info (name) VALUES ('ayush')
+12). INSERT into info (name) VALUES ('dhaval'), ('param')
+13). UPDATE info SET city = 'Rajkot' where id = 1 
+14). DELETE FROM info WHERE id = '2'
+15). DELETE FROM info WHERE id = '3'
+        DELETE FROM info WHERE id = '4'
