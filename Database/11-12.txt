@@ -1,0 +1,6 @@
+1). SELECT * FROM info JOIN info1 ON info.id = info1.id
+2). SELECT *FROM info LEFT JOIN info1 ON info.salary = info1.salary
+3). SELECT *FROM info RIGHT JOIN info1 ON info.city = info1.city
+4). SELECT *FROM info LEFT JOIN info1 ON info.id = info1.id
+     UNION
+     SELECT *FROM info RIGHT JOIN info1 ON info.id = info1.id

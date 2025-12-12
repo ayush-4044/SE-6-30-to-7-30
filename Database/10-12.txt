@@ -1,0 +1,18 @@
+1). SELECT * FROM `info` WHERE 1
+2). SELECT name FROM info
+3). SELECT * FROM `info` WHERE id = 1
+4). SELECT name FROM info ORDER BY name ASC
+5). SELECT MAX(salary) FROM info
+6). SELECT MIN(salary) FROM info
+7). SELECT SUM(salary) FROM info
+8). SELECT AVG(salary) FROM info
+9). SELECT COUNT(salary) FROM info
+10). SELECT salary FROM info LIMIT 1
+11). SELECT * FROM info ORDER BY salary DESC LIMIT 1
+12). SELECT UCASE(name) FROM info
+13). SELECT LCASE(name) from info
+14). SELECT MID(name,1,4) FROM info
+15). SELECT LENGTH(name) FROM info
+16). SELECT ROUND(salary,0) FROM info
+17). SELECT name, now() AS DateTime FROM info
+18). SELECT name, format(now(),'yyyy-mm-dd') AS date FROM info
