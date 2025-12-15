@@ -1,0 +1,179 @@
+Module #3 Introduction to OOPS Programming 
+
+3.1) Introduction to C++ :-
+
+3.1.1) What are the key differences between Procedural Programming and Object-Oriented Programming (OOP)? 
+
+- POP follows a step-by-step procedure and focuses on functions,
+while OOP focuses on objects, classes, and real-world modeling.
+
+3.1.2) List and explain the main advantages of OOP over POP.
+
+- OOP gives better code reusability, security (encapsulation), and easier maintenance,
+while POP becomes complex and hard to manage for large projects.
+
+3.1.3) Explain the steps involved in setting up a C++ development environment.
+
+- Install a C++ compiler
+- Install an IDE/Editor (VS Code/CodeBlocks) 
+- Configure compiler path and create your first C++ file.
+
+3.1.4) What are the main input/output operations in C++? Provide examples.
+
+- Input uses cin >> and output uses cout <<.
+  Example: cin >> a; and cout << "Hello";.
+
+3.2) Variables, Data Types, and Operators :-
+
+3.2.1) What are the different data types available in C++? Explain with examples.
+
+- Basic types: int, float, double, char, bool
+  Example: int a = 10;, char ch = 'A' ,float b = 3.2 ;
+
+3.2.2) Explain the difference between implicit and explicit type conversion in C++.
+
+- Implicit : done automatically by compiler → int x = 5.5;
+  Explicit : done manually using cast → float y = (float)10 / 3;
+
+3.2.3) What are the different types of operators in C++? Provide examples of each.
+
+- Arithmetic: + - * / %  
+  Example : int a =10, b = 3;
+	   cout<< a+b;
+
+- Relational: == != > <
+  Example : cout<< (a>b);
+ 
+- Logical: && || !
+  Example : int a = 10, b = 20, c = 3;
+	   cout<< (a>b && a>c);
+
+- Assignment: = += -=
+  Example : a+=5;
+
+- Increment/Decrement: ++ --
+  Example : a++; 
+
+- Bitwise: & | ^ ~ << >>
+  Example : cout<<(5&3);
+
+3.2.4) Explain the purpose and use of constants and literals in C++.
+
+- Constants store values that cannot change (const int x = 10;).
+  Literals are fixed values written directly like 10, 'A', 3.14.
+
+3.3) Control Flow Statements :-
+
+3.3.1) What are conditional statements in C++? Explain the if-else and switch statements.
+
+- Conditional statements decide which block of code runs.
+  if-else checks conditions one by one, while switch selects a case based on a single value.
+
+3.3.2) What is the difference between for, while, and do-while loops in C++?
+
+- for is used when number of iterations is known,
+  while when condition is checked before loop,
+  do-while runs at least once because condition is checked after.
+
+3.3.3) How are break and continue statements used in loops? Provide examples.
+
+- break stops the loop completely,
+  continue skips the current iteration and moves to the next one.
+
+3.3.4) Explain nested control structures with an example.
+
+- A control structure (like loop or if) inside another is called nested.
+  Example: a loop inside another loop for printing patterns.
+
+3.4) Functions and Scope :-
+
+3.4.1) What is a function in C++? Explain the concept of function declaration, definition, and calling.
+
+- A function is a block of code that performs a task.
+  Declaration tells the compiler about the function, definition contains the code, and calling executes the function.
+
+3.4.2) What is the scope of variables in C++? Differentiate between local and global scope.
+
+- Local variables are accessible only inside their function/block.
+  Global variables are accessible throughout the entire program.
+
+3.4.3) Explain recursion in C++ with an example.
+
+- Recursion is when a function calls itself to solve a problem.
+  Example: factorial function calling itself with smaller values. 
+
+3.4.4) What are function prototypes in C++? Why are they used?
+
+- A function prototype declares a function before its use.
+  It is used to tell the compiler the function's name, return type, and parameters before main().
+
+3.5) Arrays and Strings :-
+
+3.5.1) What are arrays in C++? Explain the difference between single-dimensional and multi-dimensional arrays.
+
+- Arrays are collections of elements of the same data type stored in continuous memory.
+
+ 1D Array (single-dimensional):
+ Stores data in a single row (linear form).
+
+ Multi-dimensional Array (2D, 3D…):
+ Stores data in rows and columns (matrix form).
+
+3.5.2) Explain string handling in C++ with examples. 
+
+- Strings in C++ are handled using character arrays or the C++ string class.
+
+ Example : char name[10] = "RAM";
+
+3.5.3) How are arrays initialized in C++? Provide examples of both 1D and 2D arrays. 
+
+- 1D array : int a[5] = {10, 20, 30, 40, 50};
+  2 D array : int mat[2][2] = {
+  		  {1, 2},
+		  {3, 4}
+		         };
+
+3.5.4) Explain string operations and functions in C++. 
+
+- String length : strlen();
+  String lower case : strlwr();
+  String upper case : strupr();
+  String revers : strrev();
+  String concat : strcat();
+  String copy : strcpy();
+  String comparer : strcmp();
+
+3.6) Introduction to Object-Oriented Programming :-
+
+3.6.1) Explain the key concepts of Object-Oriented Programming (OOP). 
+
+- Class 
+  Object 
+  Abstraction
+  Polymorphism
+  Inharitance
+  Encapsulation
+
+3.6.2) What are classes and objects in C++? Provide an example.
+
+- Class : collection of objects 
+  Example : Human body
+
+  Object : Any entity which has own state and behaviour that is called an object.
+  Example : pen,paper,chair,table,etc...
+
+3.6.3) What is inheritance in C++? Explain with an example. 
+
+-  when one object acquire all the properties and behaviour of parent class.
+  Example : father - son 
+
+3.6.4) What is encapsulation in C++? How is it achieved in classes?
+
+-  wrapping up of data or binding of data.
+
+   How is it achieved	:- Use private data members
+		   Access them through public getter/setter functions
+
+
+
+

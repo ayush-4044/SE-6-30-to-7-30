@@ -1,0 +1,419 @@
+Module 2 – Introduction to Programming 
+
+1). Overview of C Programming :- 
+
+1.1) Write an essay covering the history and evolution of C programming. Explain its importance and why it is still used today.
+
+- C programming language is one of the most used programming languages in computer science. C is important because it is fast, efficient, and portable, forming the base for many modern languages like C++, Java, and Python. It is still used today in operating systems, embedded systems, and compilers due to its speed and close-to-hardware control.
+
+2). Setting Up Environment :- 
+
+2.1)  Describe the steps to install a C compiler (e.g., GCC) and set up an Integrated Development Environment (IDE) like DevC++, VS Code, or CodeBlocks.
+ 
+- Install MinGW (Recommended for VS Code or Command Line).
+
+Step 1 - Go to the official MinGW website:
+
+ 	- https://sourceforge.net/projects/mingw/
+
+Step 2 - Click Download MinGW.
+
+Step 3 - After installation, open MinGW Installer.
+
+Step 4 -  In the list, check:
+
+	- mingw32-gcc-g++
+
+	- mingw32-gcc-objc
+
+Step 5 - Click Installation → Apply Changes.
+
+Step 6 - After installation, open This PC → Properties → Advanced System Settings → Environment Variables.
+
+Step 7 - Under “System Variables”, find and select Path, then click Edit.
+
+Step 8 - Click New, and add:     
+
+	- C:\MinGW\bin
+
+Step 9 - Click OK to save.
+
+- To verify installation:
+
+- Open Command Prompt and type:    gcc --version
+
+3). Basic Structure of a C Program :-
+
+3.1)  Explain the basic structure of a C program, including headers, main function,comments, data types, and variables. Provide examples. 
+
+1). Header Files : Header files contain predefined functions that can be used in your program. 
+2). Main function : main() is nothing but a function, the program starts executing from main().
+3). Comments : Comments are used to explian a code and improve readability.
+4). Data types : Data type define what kind of value variable can store.
+5). Variables : Variables are used to store data.
+
+- Example : 
+
+#include <stdio.h>        // 1. Header file
+#include<conio.h>
+
+// 2. Comments
+/* This is a simple C program that displays values of variables */
+
+int main()                // 3. Main function (program execution starts here)
+{
+    // 4. Variable declaration
+    int age = 20;         // 5. integer data type
+    float salary = 35000.50;  // float data type
+    char grade = 'A';     // character data type
+
+    printf("Age: %d\n", age);
+    printf("Salary: %.2f\n", salary);
+    printf("Grade: %c\n", grade);
+
+    getch();
+}
+
+4). Operators in C :-
+
+4.1) Write notes explaining each type of operator in C: arithmetic, relational, logical, assignment, increment/decrement, bitwise, and conditional operators.
+
+=> Arithmetic operator :
+
+- Used to perform mathematical operations.
+
+- addition (+) 
+- subtraction (-) 
+- multiplication (*)
+- divition (/)
+- modulus (%) 
+
+=============================================================
+
+=> Relational operator : 
+
+- Used to compare two values and return either true(1) or false(0). 
+
+- less than (<)
+- greater than (>)
+- less than or equal to (<=) 
+- greater than or equal to (>=) 
+- equal to equal to (==)
+- not equal to (!=) 
+
+=============================================================
+
+=> Logical operator : 
+
+- Used to combine two or more conditions.
+
+- And (&&)
+- Or (||)
+- Not (!)
+
+=============================================================
+
+=> Assignment operator : 
+
+- Used to assign values to variables.
+
+- Assign (=) 
+
+=============================================================
+
+=> Increment/Decrement operator : 
+
+- Used to increase or decrease a value by 1.
+
+- Increment (++)
+- decrement (--) 
+
+=============================================================
+
+=> Bitwise operator : 
+
+- Used to perform operations on individual bits of integer data.
+
+- AND (&) 
+- OR (|) 
+- XOR (^) 
+
+=============================================================
+
+=>Conditional Operator : 
+
+- Used as a shortcut for if-else statements.
+
+- condition ? expression1 : expression2;
+ 
+5). Control Flow Statements in C :-
+
+5.1) Explain decision-making statements in C (if, else, nested if-else, switch). Provide examples of each. 
+
+1). if Statement :
+
+- The if statement executes only if the condition is true.
+
+- Example:
+
+ int age = 20;
+
+    if (age >= 18) {
+        printf("You are eligible to vote.");
+    }
+
+    getch();
+
+==================================================
+
+2). if-else Statement : 
+
+- The if-else statement executes if the condition is true,
+and another if the condition is false.
+
+- Example:
+
+ int number = 10;
+
+    if (number % 2 == 0) {
+        printf("Even number.");
+    } else {
+        printf("Odd number.");
+    }
+
+    getch();
+
+==================================================
+
+3). Nested if-else Statement : 
+
+- A nested if-else means using an if or else if inside another if.
+
+- Example : 
+
+ int marks = 85;
+
+    if (marks >= 40) {
+        if (marks >= 75) {
+            printf("Distinction");
+        } else {
+            printf("Pass");
+        }
+    } else {
+        printf("Fail");
+    }
+
+    getch();
+
+==================================================
+
+4). Switch Statement :
+
+- The switch statement is used when you have multiple possible conditions for a single variable.
+
+- Example : 
+
+  int choice;
+	
+   switch (choice) {
+        case 1:
+            printf("gujrati");
+            break;
+        case 2:
+            printf("hindi");
+        default:
+            printf("Invalid choice");
+    }
+
+    getch();
+
+6). Looping in C :- 
+
+6.1) Compare and contrast while loops, for loops, and do-while loops. Explain the scenarios in which each loop is most appropriate. 
+
+- While Loop : In while loop, The condition is checked first and then running all statements.
+- For Loop : In for loop, first do the initialize after checked condition after running statements and then do the increment/decrement.
+- Do While Loop : In do while loop, it execute at least once, even if the condition is false.    
+
+- Use of all loop : 
+
+Use "for" when you know the number of repetitions.
+Use "while" when the condition depends on runtime input.
+Use "do-while" when the loop must run at least once.
+
+7). Loop Control Statements :- 
+
+7.1)  Explain the use of break, continue, and goto statements in C. Provide examples of each. 
+
+=> Break : 
+
+- Break statement is used to exit from loop or switch statement.
+
+- exmaple : 
+
+  void main() {
+    int i;
+    for(i = 1; i <= 10; i++) {
+        if(i == 5)
+            break;  
+        printf("%d ", i);
+    }
+    getch();
+ }
+
+============================================================
+
+=> Continue : 
+
+- Continue statement is used to skip the current iteration of the loop and move to next iteration.
+
+- example : 
+
+  void main() {
+    int i;
+    for(i = 1; i <= 10; i++) {
+        if(i == 5)
+            continue;
+        printf("%d ", i);
+    
+    getch();
+ }
+
+============================================================
+
+=> Goto : 
+
+- Goto statement is used to jump to label statetment.
+
+- example :
+
+void main() {
+    int num = 1;
+    
+    start: 
+    printf("%d ", num);
+    num++;
+    
+    if(num <= 5)
+        goto start; 
+    
+    getch();
+}
+
+8). Functions in C :- 
+
+8.1) What are functions in C? Explain function declaration, definition, and how to call a function. Provide examples.
+
+- When you want to reuse the code it is called functions.
+
+- There are two types of functions.
+
+1). Inbuilt functions.
+2). User-defined functions.
+
+- Function declaration : return_type function_name (parameter1, parameter2, ....);
+
+- Function definition : return_type function_name(parameter1, parameter2, ...) {
+   		 // statements
+		}
+
+- Function Call : function_name(arguments);
+
+- Example : 
+
+#include <stdio.h>
+#iclucde<conio.h>
+
+// Function Declaration
+int add(int a, int b);
+
+void main() {
+    int num1 = 5, num2 = 10, result;
+
+    // Function Call
+    result = add(num1, num2);
+
+    printf("Sum = %d\n", result);
+    getch();
+}
+
+// Function Definition
+int add(int a, int b) {
+    return a + b;
+}
+
+9). Arrays in C :-
+
+9.1) Explain the concept of arrays in C. Differentiate between one-dimensional and multi-dimensional arrays with examples. 
+
+- Array : Collection of elements that is called array.
+
+- One dimensional : It is used store data in single row.
+- Example :-  int marks[3] = {45, 67, 89};
+  		  int i;
+
+   		 printf("Student Marks:\n");
+   		 for(i = 0; i < 3; i++) {
+     		   printf("%d ", marks[i]);
+   		 }
+
+- Multi dimensional : It is used store data in rows and columns.
+- Example :- int matrix[2][3] = {
+    		    {1, 2, 3},
+      		  {4, 5, 6}
+ 		   };
+  		  int i, j;
+
+    		printf("Matrix elements:\n");
+    		for(i = 0; i < 2; i++) {
+      		  for(j = 0; j < 3; j++) {
+   		         printf("%d ", matrix[i][j]);
+   		     }
+      		  printf("\n");
+  		  }
+
+10). Pointers in C :-
+
+10.1) Explain what pointers are in C and how they are declared and initialized. Why are pointers important in C? 
+
+- Pointers in C are variables that store the memory address of another variable,declared using (*), initialized using (&) and important for memory management, dynamic data handling and faster execution.
+
+11). Strings in C :-
+
+11.1) Explain string handling functions like strlen(), strcpy(), strcat(), strcmp(), and strchr(). Provide examples of when these functions are useful.
+
+- String handling functions in C include strlen() (finds string length), strcpy() (copies one string to another), strcat() (joins two strings), strcmp() (compares two strings), and strchr() (finds a character in a string).
+
+strlen() – useful to find string length for validation,
+strcpy() – to copy user input into another variable,
+strcat() – to join first and last name into full name,
+strcmp() – to compare login credentials,
+strchr() – to search a character like '@' in an email string.
+
+12). Structures in C :- 
+
+12.1) Explain the concept of structures in C. Describe how to declare, initialize, and access structure members. 
+
+- In c structure is a user-defined data type,it is declared using struct keyword,initialized by assigning values to members and access by using 
+dot(.) operator.
+
+13). File Handling in C :-
+
+13.1) Explain the importance of file handling in C. Discuss how to perform file operations like opening, closing, reading, and writing files.
+
+- Importance : It is used to save records, read existing data, and handle large data efficiently.
+
+- File open :- Use fopen(),
+  FILE *fp;
+  fp = fopen("data.txt","w");
+
+- File close :- Use fclose(),
+  fclose(fp);
+
+- File write :- Use fprintf() or fwrite(),
+  fp = fopen ("data.txt","w");
+  fprintf(fp, "Hello World!");
+
+- File read :- Use fscanf() or fread(),
+  fp = fopen ("data.txt","r");
+  fscanf(fp, "%s",str);
