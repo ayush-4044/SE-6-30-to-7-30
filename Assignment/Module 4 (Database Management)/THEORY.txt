@@ -1,0 +1,173 @@
+Module 4 – Introduction to DBMS 
+
+Theory Questions:
+
+1). Introduction to SQL :
+
+1.1) What is SQL, and why is it essential in database management? 
+- SQL is Structured Query Language and that is used to create, store, update, and retrieve data from databases.
+
+1.2) Explain the difference between DBMS and RDBMS.
+- DBMS stores data as files without relations, while RDBMS stores data in tables with relationships using keys.
+
+1.3) Describe the role of SQL in managing relational databases.
+- SQL is used to define database structure, manipulate data, and control access in relational databases.
+
+1.4) What are the key features of SQL?
+- SQL supports data querying, data manipulation, data definition, security control, and transaction management.
+
+2). SQL Syntax :
+
+2.1) What are the basic components of SQL syntax?
+- SQL syntax includes commands (SELECT, INSERT), clauses (WHERE, GROUP BY), operators, and expressions.
+
+2.2) Write the general structure of an SQL SELECT statement.
+- SELECT column_name(s) FROM table_name WHERE condition;
+
+2.3) Explain the role of clauses in SQL statements.
+- Clauses specify conditions, filtering, grouping, and sorting of data in an SQL query.
+
+3). SQL Constraints :
+
+3.1) What are constraints in SQL? List and explain the different types of constraints.
+- Constraints are rules applied to table columns to maintain data accuracy and integrity, such as PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, and DEFAULT.
+
+3.2) How do PRIMARY KEY and FOREIGN KEY constraints differ?
+- PRIMARY KEY uniquely identifies each record in a table, while FOREIGN KEY creates a relationship by referencing a PRIMARY KEY in another table.
+
+3.3) What is the role of NOT NULL and UNIQUE constraints?
+- NOT NULL ensures a column cannot have empty values, while UNIQUE ensures all values in a column are different.
+
+4). Main SQL Commands and Sub-commands (DDL) :
+
+4.1) Define the SQL Data Definition Language (DDL).
+- DDL is a set of SQL commands used to create, modify, and delete database structures like tables and schemas.
+
+4.2) Explain the CREATE command and its syntax.
+- The CREATE command is used to create database objects such as tables.
+- Syntax: CREATE TABLE table_name (column_name datatype constraints);
+
+4.3) What is the purpose of specifying data types and constraints during table creation?
+- Data types define the kind of data a column can store, while constraints ensure data validity and integrity.
+
+5). ALTER Command : 
+
+5.1) What is the use of the ALTER command in SQL?
+- The ALTER command is used to change the structure of an existing table, such as adding, modifying, or deleting columns.
+
+5.2) How can you add, modify, and drop columns from a table using ALTER?
+- Add: ALTER TABLE table_name ADD column_name datatype;
+- Modify: ALTER TABLE table_name MODIFY column_name datatype;
+- Drop: ALTER TABLE table_name DROP column_name;
+
+6). DROP Command :
+
+6.1) What is the function of the DROP command in SQL?
+- The DROP command is used to permanently delete database objects like tables from the database.
+
+6.2) What are the implications of dropping a table from a database?
+- Dropping a table removes both the table structure and all its data permanently and cannot be undone.
+
+7). Data Manipulation Language (DML)  :
+
+7.1) Define the INSERT, UPDATE, and DELETE commands in SQL.
+- INSERT adds new records to a table, UPDATE modifies existing records, and DELETE removes records from a table.
+
+7.2) What is the importance of the WHERE clause in UPDATE and DELETE operations?
+- The WHERE clause specifies which rows are affected, preventing accidental updates or deletions of all records.
+
+8). Data Query Language (DQL) :
+
+8.1) What is the SELECT statement, and how is it used to query data?
+- The SELECT statement is used to retrieve data from one or more tables based on specified conditions.
+
+8.2) Explain the use of the ORDER BY and WHERE clauses in SQL queries.
+- WHERE filters records based on conditions, while ORDER BY sorts the result set in ascending or descending order.
+
+9). Data Control Language (DCL) :
+
+9.1) What is the purpose of GRANT and REVOKE in SQL?
+- GRANT is used to give users permissions on database objects, while REVOKE removes those permissions.
+
+9.2) How do you manage privileges using these commands?
+- Privileges are managed by assigning access with GRANT and withdrawing access with REVOKE for specific users or roles.
+
+10. Transaction Control Language (TCL) : 
+
+10.1) What is the purpose of the COMMIT and ROLLBACK commands in SQL?
+- COMMIT permanently saves all changes made in a transaction, while ROLLBACK undoes changes since the last commit.
+
+10.2) Explain how transactions are managed in SQL databases.
+- Transactions group multiple SQL operations into a single unit that follows ACID properties to ensure data consistency and reliability.
+
+11). SQL Joins :
+
+11.1) Explain the concept of JOIN in SQL and its types.
+- JOIN is used to combine rows from multiple tables based on a related column; INNER JOIN returns matching rows, LEFT JOIN returns all left table rows, RIGHT JOIN returns all right table rows, and FULL OUTER JOIN returns all rows from both tables.
+
+11.2) How are joins used to combine data from multiple tables?
+- Joins link tables using common columns (usually primary and foreign keys) to retrieve related data in a single query.
+
+12. SQL Group By 
+
+12.1) What is the GROUP BY clause in SQL? How is it used with aggregate functions?
+- GROUP BY groups rows with the same values, allowing aggregate functions like COUNT, SUM, and AVG to be applied to each group.
+
+12.2) Explain the difference between GROUP BY and ORDER BY.
+- GROUP BY groups data for aggregation, while ORDER BY sorts the result set.
+
+13). SQL Stored Procedure :
+
+13.1) What is a stored procedure in SQL, and how does it differ from a standard SQL query?
+- A stored procedure is a precompiled set of SQL statements stored in the database, while a standard SQL query is executed one time when called.
+
+13.2) Explain the advantages of using stored procedures.
+- Stored procedures improve performance, enhance security, reduce network traffic, and allow code reuse.
+
+14). SQL View :
+
+14.1) What is a view in SQL, and how is it different from a table?
+- A view is a virtual table based on a query, while a table stores data physically in the database.
+
+14.2) Explain the advantages of using views in SQL databases.
+- Views improve security, simplify complex queries, and provide controlled access to data.
+
+15). SQL Triggers : 
+
+15.1) What is a trigger in SQL? Describe its types and when they are used.
+- A trigger is a special stored program that automatically executes in response to database events; types include BEFORE and AFTER triggers used during data modification.
+
+15.2) Explain the difference between INSERT, UPDATE, and DELETE triggers.
+- INSERT triggers run when new records are added, UPDATE triggers run when records are modified, and DELETE triggers run when records are removed.
+
+16). Introduction to PL/SQL :
+
+16.1) What is PL/SQL, and how does it extend SQL's capabilities?
+- PL/SQL is Oracle’s procedural extension of SQL that allows variables, loops, and control structures to create complex programs within the database.
+
+16.2) List and explain the benefits of using PL/SQL.
+- PL/SQL improves performance, supports modular programming, ensures better error handling, and reduces network traffic by executing multiple statements at once.
+
+17). PL/SQL Control Structures :
+
+17.1) What are control structures in PL/SQL? Explain the IF-THEN and LOOP control structures.
+- Control structures direct the flow of execution in PL/SQL; IF-THEN executes code based on conditions, while LOOP repeatedly executes a block of code until a condition is met.
+
+17.2) How do control structures in PL/SQL help in writing complex queries?
+- They allow conditional logic, repetition, and decision-making, enabling more flexible and powerful database operations.
+
+18). SQL Cursors :
+
+18.1) What is a cursor in PL/SQL? Explain the difference between implicit and explicit cursors.
+- A cursor is a pointer to a result set; implicit cursors are automatically created for single-row queries, while explicit cursors are defined by the programmer for multi-row queries.
+
+18.2) When would you use an explicit cursor over an implicit one?
+- Use an explicit cursor when processing multiple rows from a query or when more control over row-by-row processing is needed.
+
+19). Rollback and Commit Savepoint :
+
+19.1) Explain the concept of SAVEPOINT in transaction management. How do ROLLBACK and COMMIT interact with savepoints?
+- A SAVEPOINT marks a point within a transaction to which you can roll back without affecting prior actions; ROLLBACK undoes changes to a savepoint, while COMMIT makes all changes permanent, including those before the savepoint.
+
+19.2) When is it useful to use savepoints in a database transaction?
+- Savepoints are useful for partially undoing changes in complex transactions without rolling back the entire transaction.
