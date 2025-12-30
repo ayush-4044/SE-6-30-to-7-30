@@ -1,0 +1,282 @@
+Types of Internet Connections :
+
+LAB EXERCISE : 
+
+1). Research different types of internet connections (e.g., broadband, fiber, satellite) 
+and list their pros and cons. 
+
+1).Broadband (DSL / Cable)
+
+- Pros
+Widely available
+Affordable
+Easy installation
+Suitable for home and small offices
+
+- Cons
+Speed decreases with distance (DSL)
+Shared bandwidth (Cable)
+Slower than fiber
+Network congestion during peak hours
+
+2️).Fiber Optic Internet
+
+-Pros
+Extremely high speed (up to Gbps)
+Very low latency
+Reliable and stable
+Ideal for streaming, gaming, cloud apps
+
+- Cons
+Limited availability (mostly urban areas)
+Expensive installation
+Higher monthly cost
+
+3️).Satellite Internet
+
+- Pros
+Available in rural and remote locations
+No physical cable required
+Wide coverage
+
+- Cons
+High latency (delay)
+Affected by weather
+Expensive equipment
+Slower than fiber and broadband
+
+4️). Mobile Data (4G / 5G)
+
+- Pros
+Portable and flexible
+Easy setup
+Good speed (especially 5G)
+Ideal for smartphones and hotspots
+
+- Cons
+Data limits
+Network congestion
+Speed depends on signal strength
+Can be costly for heavy usage
+
+5️).Dial-Up Internet
+
+- Pros
+Low cost
+Available in remote areas
+Simple technology
+
+- Cons
+Extremely slow
+Blocks phone line during use
+Not suitable for modern applications
+
+=========================================================
+
+Protocols : 
+
+LAB EXERCISE: 
+
+1). Simulate HTTP and FTP requests using command line tools (e.g., curl).
+
+- HTTP Request Simulation
+  1) HTTP GET Request
+  2) View HTTP Request & Response Headers
+  3) HTTP POST Request (Send Data)
+  4) Save HTTP Response to a File
+  5) Simulate Authentication (Basic Auth)
+
+- FTP Request Simulation
+  1) FTP Server Connection (Anonymous Login)
+  2) Download File via FTP
+  3) Upload File to FTP Server
+  4) Download Using FTP Authentication
+
+=========================================================
+
+Application Security 
+
+LAB EXERCISE: 
+
+1). Identify and explain three common application security vulnerabilities. Suggest 
+possible solutions. 
+
+- SQL Injection
+Occurs when attackers insert malicious SQL queries through input fields to access or modify the database.
+Solution: Use prepared statements, input validation, and parameterized queries.
+
+- Cross-Site Scripting (XSS)
+Happens when malicious scripts are injected into web pages and executed in users’ browsers.
+Solution: Validate inputs, encode outputs, and use Content Security Policy (CSP).
+
+- Broken Authentication
+Weak authentication allows attackers to hijack user accounts or sessions.
+Solution: Use strong passwords, secure session handling, and multi-factor authentication (MFA).
+
+=========================================================
+
+Software Applications and Its Types 
+
+LAB EXERCISE:
+
+1).  Identify and classify 5 applications you use daily as either system software or 
+application software.
+
+Windows OS – System Software
+Manages hardware, memory, files, and runs applications.
+
+Android OS – System Software
+Controls mobile hardware and provides a platform for apps.
+
+Google Chrome – Application Software
+Used for browsing the internet and accessing websites.
+
+WhatsApp – Application Software
+Used for messaging, voice, and video calls.
+
+Microsoft Word – Application Software
+Used for creating and editing documents.
+
+=========================================================
+
+Software Environments 
+
+LAB EXERCISE:
+
+1). Explore different types of software environments (development, testing, production). 
+Set up a basic environment in a virtual machine.
+
+1. Software Environments
+a) Development Environment
+
+Purpose: Used by developers to write and modify code.
+Features:
+
+Debugging tools enabled
+
+Frequent code changes
+
+Local databases or mock services
+
+Example:
+Developer’s laptop with VS Code, Java/Python, local MySQL.
+
+b) Testing Environment
+
+Purpose: Used by testers to verify functionality and find bugs.
+Features:
+
+Stable build from development
+
+Test data
+
+Used for manual and automation testing
+
+Example:
+QA server running the application with Selenium tests.
+
+c) Production Environment
+
+Purpose: Live environment used by real users.
+Features:
+
+High security
+
+Optimized performance
+
+Real data
+
+Example:
+Live e-commerce website used by customers.
+
+2. Setting Up a Basic Environment in a Virtual Machine (VM)
+Step 1: Install Virtualization Software
+
+Install VirtualBox or VMware Workstation
+
+Step 2: Download OS ISO
+
+Download Ubuntu Linux or Windows ISO
+
+Step 3: Create a Virtual Machine
+
+Open VirtualBox
+
+Click New
+
+Select OS type and version
+
+Allocate RAM (e.g., 4 GB)
+
+Create virtual hard disk (e.g., 20 GB)
+
+Step 4: Install Operating System
+
+Attach the ISO file
+
+Start the VM
+
+Follow OS installation steps
+
+Step 5: Set Up Basic Tools
+
+Install required software:
+
+Code editor (VS Code)
+
+Programming language (Java / Python)
+
+Database (MySQL)
+
+Browser (Chrome)
+
+=========================================================
+
+Types of Software 
+
+LAB EXERCISE: 
+
+1). Create a list of software you use regularly and classify them into the following 
+categories: system, application, and utility software.
+
+1. System Software
+
+Windows OS – Manages computer hardware and resources
+Android OS – Manages mobile device operations
+Linux (Ubuntu) – Provides an operating system environment
+
+2. Application Software
+
+Google Chrome – Web browsing
+Microsoft Word – Document creation
+WhatsApp – Messaging and calling
+Zoom – Video conferencing
+Spotify – Music streaming
+
+3. Utility Software
+
+Windows Defender – Antivirus protection
+Disk Cleanup – Removes unnecessary files
+WinRAR – File compression
+CCleaner – System cleanup
+Backup & Restore – Data backup
+Limited access
+
+=========================================================
+
+Software Testing 
+
+LAB EXERCISE: 
+
+1). Develop test cases for a simple calculator program. 
+
+- Open the calculator application
+- Enter the first number
+- Select the required operation (Add / Subtract / Multiply / Divide)
+- Enter the second number
+- Click the Calculate / = button
+- Verify the displayed result with the expected output
+- Repeat the steps for different operations and inputs
+- Check error handling (e.g., division by zero, invalid input)
+
+=========================================================
